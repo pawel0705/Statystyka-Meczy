@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Match Statistics - main page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h3> Create Database </h3>
+        <form action="CreateDatabase">
+            <input type="submit" value="Create" />
+        </form>
+        <hr>
+        <h3>Add new match to database</h3>
+        <form action="AddNewMatch">
+            <p>Number of HOST team players:<input type="text" size=3 name="numberOfHostTeamPlayers"></p>
+            <p>Number of GUEST team players:<input type="text" size="3" name ="numberOfGuestTeamPlayers"></p>
+            <p>Number of arbitrator assistants:<input type="text" size="3" name ="numberOfArbitratorAssistants"></p>
+            <input type="submit" value="Next"/>
+        </form> 
+        <hr>
+        <h3> Show all matches </h3>
+        <form action="ShowAllMatches">
+            <input type="submit" value="Show all matches" />
+        </form>
+        <hr>
+        <h3> Delete all matches </h3>
+        <form action="DeleteAllMatches">
+            <input type="submit" value="Delete all matches" />
+        </form>
+        <hr>
+        <h3>Show one match</h3>
+        <form action="ShowOneMatch">
+            <p>Match ID:<input type="text" size=3 name="matchId"></p>
+            <input type="submit" value="Show"/>
+        </form> 
+        <hr>
+        <h3>Delete one match</h3>
+        <form action="DeleteOneMatch">
+            <p>Match ID:<input type="text" size=3 name="deleteMatchId"></p>
+            <input type="submit" value="Delete"/>
+        </form> 
+        <hr>
+        <h3>Read database from file</h3>
+        <form action="ReadFromFile">
+            <p>File path or name:<input type="text" size=40 name="readFilePath"></p>
+            <input type="submit" value="Open file"/>
+        </form> 
+        <hr>
+        <h3>Save database to file</h3>
+        <form action="SaveToFile">
+            <p>File path or name:<input type="text" size=40 name="saveFilePath"></p>
+            <input type="submit" value="Save file"/>
+        </form> 
+        <hr>
+        <h3> Show JDBC database </h3>
+        <form action="ShowDatabase">
+            <input type="submit" value="Show" />
+        </form>
+    </body>
+</html>

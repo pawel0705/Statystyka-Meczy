@@ -1,0 +1,56 @@
+1
+1
+90
+Frank de Bleeckere
+1
+Oscar Ruiz
+FC Barcelona
+Spain
+Ernesto Valverde
+3
+Lionel Messi
+2
+3
+0
+90
+1
+NoRed
+Ansu Fati
+0
+0
+19
+78
+0
+YesRed
+Arthur Melo
+1
+2
+0
+90
+2
+YesRed
+Real Madrit
+Spain
+Zinedine Zidane
+3
+Jan Kowalski
+1
+2
+0
+90
+0
+NoRed
+Karim Benzema
+3
+4
+0
+90
+2
+YesRed
+Gereth Bale
+4
+0
+0
+90
+2
+YesRed

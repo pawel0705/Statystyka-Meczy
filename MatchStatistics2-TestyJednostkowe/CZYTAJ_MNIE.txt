@@ -1,0 +1,2 @@
+Wygenerowany Javadoc w folderze "dist".
+Plik Jar wygenerowany w folderze "disc" i zrobiony dodatkowo plik run.bat, po uruchomieniu którego uruchomi siê aplikacja konsolowa.

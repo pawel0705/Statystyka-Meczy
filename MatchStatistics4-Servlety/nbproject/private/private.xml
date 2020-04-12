@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/nbproject/build-impl.xml</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/src/java/pl/polsl/lab4/pawel/salicki/servlet/AddNewMatch.java</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/web/index.html</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/src/java/pl/polsl/lab4/pawel/salicki/servlet/ReadFromFile.java</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/src/java/pl/polsl/lab4/pawel/salicki/model/Parsable.java</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/src/java/pl/polsl/lab4/pawel/salicki/model/Player.java</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/web/mainPage.html</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/src/java/pl/polsl/lab4/pawel/salicki/model/SoccerTeam.java</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/src/java/pl/polsl/lab4/pawel/salicki/servlet/Register.java</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/src/java/pl/polsl/lab4/pawel/salicki/model/Database.java</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/src/java/pl/polsl/lab4/pawel/salicki/model/Match.java</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/src/java/pl/polsl/lab4/pawel/salicki/servlet/MainPage.java</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/web/register.html</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/src/java/pl/polsl/lab4/pawel/salicki/servlet/CreateDatabase.java</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/src/java/pl/polsl/lab4/pawel/salicki/servlet/DeleteAllMatches.java</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/src/java/pl/polsl/lab4/pawel/salicki/servlet/Login.java</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/web/login.html</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/web/link.html</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/src/java/pl/polsl/lab4/pawel/salicki/servlet/Logout.java</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/src/java/pl/polsl/lab4/pawel/salicki/servlet/ShowAllMatches.java</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/src/java/pl/polsl/lab4/pawel/salicki/servlet/ShowOneMatch.java</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/src/java/pl/polsl/lab4/pawel/salicki/servlet/DeleteOneMatch.java</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/src/java/pl/polsl/lab4/pawel/salicki/servlet/AddNewMatchSecond.java</file>
+            <file>file:/C:/Users/User/Desktop/MatchStatistics/src/java/pl/polsl/lab4/pawel/salicki/servlet/SaveToFile.java</file>
+        </group>
+    </open-files>
+</project-private>

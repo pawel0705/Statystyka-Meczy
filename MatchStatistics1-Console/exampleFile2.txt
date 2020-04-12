@@ -1,0 +1,112 @@
+2
+2
+90
+Frank de Bleeckere
+1
+Oscar Ruiz
+FC Barcelona
+Spain
+Ernesto Valverde
+3
+Lionel Messi
+2
+3
+0
+90
+1
+NoRed
+Ansu Fati
+0
+0
+19
+78
+0
+YesRed
+Arthur Melo
+1
+2
+0
+90
+2
+YesRed
+Real Madrit
+Spain
+Zinedine Zidane
+3
+Jan Kowalski
+1
+2
+0
+90
+0
+NoRed
+Karim Benzema
+3
+4
+0
+90
+2
+YesRed
+Gereth Bale
+4
+0
+0
+90
+2
+YesRed
+2
+115
+Mark Clattenburg
+2
+Markus Merk
+Mike Riley
+AC Milan
+Italy
+Gennaro Gattuso
+4
+Krzysztof Piatek
+1
+1
+0
+115
+1
+YesRed
+Hakan Calhanglu
+2
+3
+0
+115
+1
+NoRed
+Lucas Paqueta
+1
+0
+2
+112
+1
+YesRed
+Rafael Leao
+0
+2
+1
+114
+1
+YesRed
+FC Bayern Munich
+Germany
+Niko Kovac
+2
+Fhilippe Coutinho
+2
+1
+0
+115
+1
+NoRed
+Thomas Muller
+2
+3
+0
+115
+2
+YesRed
