@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/MatchStatisticsWebService/AddNewMatchService?wsdl" uri="wsdl/localhost_8080/MatchStatisticsWebService/AddNewMatchService.wsdl"/>
+    <system systemId="http://localhost:8080/MatchStatisticsWebService/AddNewMatchService?xsd=1" uri="wsdl/localhost_8080/MatchStatisticsWebService/AddNewMatchService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/MatchStatisticsWebService/ManageContainerService?wsdl" uri="wsdl/localhost_8080/MatchStatisticsWebService/ManageContainerService.wsdl"/>
+    <system systemId="http://localhost:8080/MatchStatisticsWebService/ManageContainerService?xsd=1" uri="wsdl/localhost_8080/MatchStatisticsWebService/ManageContainerService.xsd_1.xsd"/>
+</catalog>

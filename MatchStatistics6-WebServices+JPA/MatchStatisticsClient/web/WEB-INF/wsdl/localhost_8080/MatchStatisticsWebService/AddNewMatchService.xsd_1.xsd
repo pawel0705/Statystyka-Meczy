@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://webServices.salicki.pawel.lab6.polsl.pl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webServices.salicki.pawel.lab6.polsl.pl/">
+
+<xs:element name="addGuestPlayer" type="tns:addGuestPlayer"/>
+
+<xs:element name="addGuestPlayerResponse" type="tns:addGuestPlayerResponse"/>
+
+<xs:element name="addHostPlayer" type="tns:addHostPlayer"/>
+
+<xs:element name="addHostPlayerResponse" type="tns:addHostPlayerResponse"/>
+
+<xs:element name="createGuestSoccerTeam" type="tns:createGuestSoccerTeam"/>
+
+<xs:element name="createGuestSoccerTeamResponse" type="tns:createGuestSoccerTeamResponse"/>
+
+<xs:element name="createHostSoccerTeam" type="tns:createHostSoccerTeam"/>
+
+<xs:element name="createHostSoccerTeamResponse" type="tns:createHostSoccerTeamResponse"/>
+
+<xs:complexType name="createGuestSoccerTeam">
+<xs:sequence>
+<xs:element name="guestTeamName" type="xs:string" minOccurs="0"/>
+<xs:element name="guestTeamCountry" type="xs:string" minOccurs="0"/>
+<xs:element name="guestTeamCoachName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createGuestSoccerTeamResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="addGuestPlayer">
+<xs:sequence>
+<xs:element name="playerGuestName" type="xs:string" minOccurs="0"/>
+<xs:element name="playerGuestGoals" type="xs:int"/>
+<xs:element name="playedWholeMatch" type="xs:boolean"/>
+<xs:element name="playerGuestEnteredMinute" type="xs:int"/>
+<xs:element name="playerGuestLeftMinute" type="xs:int"/>
+<xs:element name="playerGuestYellowCards" type="xs:int"/>
+<xs:element name="redCard" type="xs:boolean"/>
+<xs:element name="playerGuestFouls" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addGuestPlayerResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="createHostSoccerTeam">
+<xs:sequence>
+<xs:element name="hostTeamName" type="xs:string" minOccurs="0"/>
+<xs:element name="hostTeamCountry" type="xs:string" minOccurs="0"/>
+<xs:element name="hostTeamCoachName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createHostSoccerTeamResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="addHostPlayer">
+<xs:sequence>
+<xs:element name="playerHostName" type="xs:string" minOccurs="0"/>
+<xs:element name="playerHostGoals" type="xs:int"/>
+<xs:element name="playedWholeMatch" type="xs:boolean"/>
+<xs:element name="playerHostEnteredMinute" type="xs:int"/>
+<xs:element name="playerHostLeftMinute" type="xs:int"/>
+<xs:element name="playerHostYellowCards" type="xs:int"/>
+<xs:element name="redCard" type="xs:boolean"/>
+<xs:element name="playerHostFouls" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addHostPlayerResponse">
+<xs:sequence/>
+</xs:complexType>
+</xs:schema>

@@ -1,0 +1,985 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://webServices.salicki.pawel.lab6.polsl.pl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://webServices.salicki.pawel.lab6.polsl.pl/">
+
+<xs:element name="HeuristicMixedException" type="tns:HeuristicMixedException"/>
+
+<xs:element name="HeuristicRollbackException" type="tns:HeuristicRollbackException"/>
+
+<xs:element name="IOException" type="tns:IOException"/>
+
+<xs:element name="NotSupportedException" type="tns:NotSupportedException"/>
+
+<xs:element name="RollbackException" type="tns:RollbackException"/>
+
+<xs:element name="SystemException" type="tns:SystemException"/>
+
+<xs:element name="WrongInputException" type="tns:WrongInputException"/>
+
+<xs:element name="addGuestPlayer" type="tns:addGuestPlayer"/>
+
+<xs:element name="addGuestPlayerResponse" type="tns:addGuestPlayerResponse"/>
+
+<xs:element name="addHostPlayer" type="tns:addHostPlayer"/>
+
+<xs:element name="addHostPlayerResponse" type="tns:addHostPlayerResponse"/>
+
+<xs:element name="addNewMatch" type="tns:addNewMatch"/>
+
+<xs:element name="addNewMatchResponse" type="tns:addNewMatchResponse"/>
+
+<xs:element name="addNewMatchToJPA" type="tns:addNewMatchToJPA"/>
+
+<xs:element name="addNewMatchToJPAResponse" type="tns:addNewMatchToJPAResponse"/>
+
+<xs:element name="arbiters" type="tns:arbiters"/>
+
+<xs:element name="arbitersCreateQuery" type="tns:arbitersCreateQuery"/>
+
+<xs:element name="arbitersCreateQueryResponse" type="tns:arbitersCreateQueryResponse"/>
+
+<xs:element name="createDatabase" type="tns:createDatabase"/>
+
+<xs:element name="createDatabaseResponse" type="tns:createDatabaseResponse"/>
+
+<xs:element name="createGuestSoccerTeam" type="tns:createGuestSoccerTeam"/>
+
+<xs:element name="createGuestSoccerTeamResponse" type="tns:createGuestSoccerTeamResponse"/>
+
+<xs:element name="createHostSoccerTeam" type="tns:createHostSoccerTeam"/>
+
+<xs:element name="createHostSoccerTeamResponse" type="tns:createHostSoccerTeamResponse"/>
+
+<xs:element name="deleteAllMatches" type="tns:deleteAllMatches"/>
+
+<xs:element name="deleteAllMatchesDatabase" type="tns:deleteAllMatchesDatabase"/>
+
+<xs:element name="deleteAllMatchesDatabaseResponse" type="tns:deleteAllMatchesDatabaseResponse"/>
+
+<xs:element name="deleteAllMatchesResponse" type="tns:deleteAllMatchesResponse"/>
+
+<xs:element name="deleteMatchById" type="tns:deleteMatchById"/>
+
+<xs:element name="deleteMatchByIdResponse" type="tns:deleteMatchByIdResponse"/>
+
+<xs:element name="deleteOneMatchDatabase" type="tns:deleteOneMatchDatabase"/>
+
+<xs:element name="deleteOneMatchDatabaseResponse" type="tns:deleteOneMatchDatabaseResponse"/>
+
+<xs:element name="getArbiterName" type="tns:getArbiterName"/>
+
+<xs:element name="getArbiterNameResponse" type="tns:getArbiterNameResponse"/>
+
+<xs:element name="getArbitratorAssistantName" type="tns:getArbitratorAssistantName"/>
+
+<xs:element name="getArbitratorAssistantNameResponse" type="tns:getArbitratorAssistantNameResponse"/>
+
+<xs:element name="getArbitratorAssistantsSize" type="tns:getArbitratorAssistantsSize"/>
+
+<xs:element name="getArbitratorAssistantsSizeResponse" type="tns:getArbitratorAssistantsSizeResponse"/>
+
+<xs:element name="getBasicMatchesInfo" type="tns:getBasicMatchesInfo"/>
+
+<xs:element name="getBasicMatchesInfoResponse" type="tns:getBasicMatchesInfoResponse"/>
+
+<xs:element name="getGuestPlayerEntryTime" type="tns:getGuestPlayerEntryTime"/>
+
+<xs:element name="getGuestPlayerEntryTimeResponse" type="tns:getGuestPlayerEntryTimeResponse"/>
+
+<xs:element name="getGuestPlayerFouls" type="tns:getGuestPlayerFouls"/>
+
+<xs:element name="getGuestPlayerFoulsResponse" type="tns:getGuestPlayerFoulsResponse"/>
+
+<xs:element name="getGuestPlayerLeftTime" type="tns:getGuestPlayerLeftTime"/>
+
+<xs:element name="getGuestPlayerLeftTimeResponse" type="tns:getGuestPlayerLeftTimeResponse"/>
+
+<xs:element name="getGuestPlayerName" type="tns:getGuestPlayerName"/>
+
+<xs:element name="getGuestPlayerNameResponse" type="tns:getGuestPlayerNameResponse"/>
+
+<xs:element name="getGuestPlayerPlayedWholeTime" type="tns:getGuestPlayerPlayedWholeTime"/>
+
+<xs:element name="getGuestPlayerPlayedWholeTimeResponse" type="tns:getGuestPlayerPlayedWholeTimeResponse"/>
+
+<xs:element name="getGuestPlayerRedCard" type="tns:getGuestPlayerRedCard"/>
+
+<xs:element name="getGuestPlayerRedCardResponse" type="tns:getGuestPlayerRedCardResponse"/>
+
+<xs:element name="getGuestPlayerScoredGoals" type="tns:getGuestPlayerScoredGoals"/>
+
+<xs:element name="getGuestPlayerScoredGoalsResponse" type="tns:getGuestPlayerScoredGoalsResponse"/>
+
+<xs:element name="getGuestPlayerYellowCards" type="tns:getGuestPlayerYellowCards"/>
+
+<xs:element name="getGuestPlayerYellowCardsResponse" type="tns:getGuestPlayerYellowCardsResponse"/>
+
+<xs:element name="getGuestTeamCoachName" type="tns:getGuestTeamCoachName"/>
+
+<xs:element name="getGuestTeamCoachNameResponse" type="tns:getGuestTeamCoachNameResponse"/>
+
+<xs:element name="getGuestTeamCountryName" type="tns:getGuestTeamCountryName"/>
+
+<xs:element name="getGuestTeamCountryNameResponse" type="tns:getGuestTeamCountryNameResponse"/>
+
+<xs:element name="getGuestTeamName" type="tns:getGuestTeamName"/>
+
+<xs:element name="getGuestTeamNameResponse" type="tns:getGuestTeamNameResponse"/>
+
+<xs:element name="getGuestTeamPlayersSize" type="tns:getGuestTeamPlayersSize"/>
+
+<xs:element name="getGuestTeamPlayersSizeResponse" type="tns:getGuestTeamPlayersSizeResponse"/>
+
+<xs:element name="getHostPlayerEntryTime" type="tns:getHostPlayerEntryTime"/>
+
+<xs:element name="getHostPlayerEntryTimeResponse" type="tns:getHostPlayerEntryTimeResponse"/>
+
+<xs:element name="getHostPlayerFouls" type="tns:getHostPlayerFouls"/>
+
+<xs:element name="getHostPlayerFoulsResponse" type="tns:getHostPlayerFoulsResponse"/>
+
+<xs:element name="getHostPlayerLeftTime" type="tns:getHostPlayerLeftTime"/>
+
+<xs:element name="getHostPlayerLeftTimeResponse" type="tns:getHostPlayerLeftTimeResponse"/>
+
+<xs:element name="getHostPlayerName" type="tns:getHostPlayerName"/>
+
+<xs:element name="getHostPlayerNameResponse" type="tns:getHostPlayerNameResponse"/>
+
+<xs:element name="getHostPlayerPlayedWholeTime" type="tns:getHostPlayerPlayedWholeTime"/>
+
+<xs:element name="getHostPlayerPlayedWholeTimeResponse" type="tns:getHostPlayerPlayedWholeTimeResponse"/>
+
+<xs:element name="getHostPlayerRedCard" type="tns:getHostPlayerRedCard"/>
+
+<xs:element name="getHostPlayerRedCardResponse" type="tns:getHostPlayerRedCardResponse"/>
+
+<xs:element name="getHostPlayerScoredGoals" type="tns:getHostPlayerScoredGoals"/>
+
+<xs:element name="getHostPlayerScoredGoalsResponse" type="tns:getHostPlayerScoredGoalsResponse"/>
+
+<xs:element name="getHostPlayerYellowCards" type="tns:getHostPlayerYellowCards"/>
+
+<xs:element name="getHostPlayerYellowCardsResponse" type="tns:getHostPlayerYellowCardsResponse"/>
+
+<xs:element name="getHostTeamCoachName" type="tns:getHostTeamCoachName"/>
+
+<xs:element name="getHostTeamCoachNameResponse" type="tns:getHostTeamCoachNameResponse"/>
+
+<xs:element name="getHostTeamCountryName" type="tns:getHostTeamCountryName"/>
+
+<xs:element name="getHostTeamCountryNameResponse" type="tns:getHostTeamCountryNameResponse"/>
+
+<xs:element name="getHostTeamName" type="tns:getHostTeamName"/>
+
+<xs:element name="getHostTeamNameResponse" type="tns:getHostTeamNameResponse"/>
+
+<xs:element name="getHostTeamPlayersSize" type="tns:getHostTeamPlayersSize"/>
+
+<xs:element name="getHostTeamPlayersSizeResponse" type="tns:getHostTeamPlayersSizeResponse"/>
+
+<xs:element name="getMatchId" type="tns:getMatchId"/>
+
+<xs:element name="getMatchIdResponse" type="tns:getMatchIdResponse"/>
+
+<xs:element name="getMatchTime" type="tns:getMatchTime"/>
+
+<xs:element name="getMatchTimeResponse" type="tns:getMatchTimeResponse"/>
+
+<xs:element name="getNumberOfMatches" type="tns:getNumberOfMatches"/>
+
+<xs:element name="getNumberOfMatchesResponse" type="tns:getNumberOfMatchesResponse"/>
+
+<xs:element name="hasMatchInData" type="tns:hasMatchInData"/>
+
+<xs:element name="hasMatchInDataResponse" type="tns:hasMatchInDataResponse"/>
+
+<xs:element name="matches" type="tns:matches"/>
+
+<xs:element name="matchesCreateQuery" type="tns:matchesCreateQuery"/>
+
+<xs:element name="matchesCreateQueryResponse" type="tns:matchesCreateQueryResponse"/>
+
+<xs:element name="persist" type="tns:persist"/>
+
+<xs:element name="persistResponse" type="tns:persistResponse"/>
+
+<xs:element name="playerCreateQuery" type="tns:playerCreateQuery"/>
+
+<xs:element name="playerCreateQueryResponse" type="tns:playerCreateQueryResponse"/>
+
+<xs:element name="players" type="tns:players"/>
+
+<xs:element name="readDatabaseFromFile" type="tns:readDatabaseFromFile"/>
+
+<xs:element name="readDatabaseFromFileResponse" type="tns:readDatabaseFromFileResponse"/>
+
+<xs:element name="readMatchFromFileDatabase" type="tns:readMatchFromFileDatabase"/>
+
+<xs:element name="readMatchFromFileDatabaseResponse" type="tns:readMatchFromFileDatabaseResponse"/>
+
+<xs:element name="saveDatabaseToFile" type="tns:saveDatabaseToFile"/>
+
+<xs:element name="saveDatabaseToFileResponse" type="tns:saveDatabaseToFileResponse"/>
+
+<xs:element name="showDatabaseArbitersList" type="tns:showDatabaseArbitersList"/>
+
+<xs:element name="showDatabaseArbitersListResponse" type="tns:showDatabaseArbitersListResponse"/>
+
+<xs:element name="showDatabaseMatchesList" type="tns:showDatabaseMatchesList"/>
+
+<xs:element name="showDatabaseMatchesListResponse" type="tns:showDatabaseMatchesListResponse"/>
+
+<xs:element name="showDatabasePlayersList" type="tns:showDatabasePlayersList"/>
+
+<xs:element name="showDatabasePlayersListResponse" type="tns:showDatabasePlayersListResponse"/>
+
+<xs:element name="showDatabaseTeamList" type="tns:showDatabaseTeamList"/>
+
+<xs:element name="showDatabaseTeamListResponse" type="tns:showDatabaseTeamListResponse"/>
+
+<xs:element name="team" type="tns:team"/>
+
+<xs:element name="teamCreateQuery" type="tns:teamCreateQuery"/>
+
+<xs:element name="teamCreateQueryResponse" type="tns:teamCreateQueryResponse"/>
+
+<xs:complexType name="getGuestPlayerYellowCards">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+<xs:element name="lastMatch" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGuestPlayerYellowCardsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGuestPlayerLeftTime">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+<xs:element name="lastMatch" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGuestPlayerLeftTimeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGuestTeamName">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGuestTeamNameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGuestPlayerName">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+<xs:element name="lastMatch" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGuestPlayerNameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHostPlayerYellowCards">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+<xs:element name="lastMatch" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHostPlayerYellowCardsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="readDatabaseFromFile">
+<xs:sequence>
+<xs:element name="filePath" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="readDatabaseFromFileResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="WrongInputException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="IOException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGuestPlayerEntryTime">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+<xs:element name="lastMatch" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGuestPlayerEntryTimeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="showDatabasePlayersList">
+<xs:sequence>
+<xs:element name="queryName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="showDatabasePlayersListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:players" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="players">
+<xs:sequence>
+<xs:element name="fouls" type="xs:int" minOccurs="0"/>
+<xs:element name="goals" type="xs:int" minOccurs="0"/>
+<xs:element name="id" type="xs:long" minOccurs="0"/>
+<xs:element name="idteam" type="xs:int" minOccurs="0"/>
+<xs:element name="minuteentered" type="xs:int" minOccurs="0"/>
+<xs:element name="minuteleft" type="xs:int" minOccurs="0"/>
+<xs:element name="name" type="xs:string" minOccurs="0"/>
+<xs:element name="playedwholematch" type="xs:boolean" minOccurs="0"/>
+<xs:element name="redcard" type="xs:boolean" minOccurs="0"/>
+<xs:element name="yellowcards" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHostPlayerScoredGoals">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+<xs:element name="lastMatch" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHostPlayerScoredGoalsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHostPlayerFouls">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+<xs:element name="lastMatch" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHostPlayerFoulsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getNumberOfMatches">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getNumberOfMatchesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createDatabase">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="createDatabaseResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteAllMatches">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="deleteAllMatchesResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewMatch">
+<xs:sequence>
+<xs:element name="matchLength" type="xs:int"/>
+<xs:element name="arbiterName" type="xs:string" minOccurs="0"/>
+<xs:element name="arbitratorAssistants" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewMatchResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getHostTeamPlayersSize">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHostTeamPlayersSizeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteAllMatchesDatabase">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="deleteAllMatchesDatabaseResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="NotSupportedException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="SystemException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="RollbackException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="HeuristicMixedException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="HeuristicRollbackException">
+<xs:sequence>
+<xs:element name="message" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createGuestSoccerTeam">
+<xs:sequence>
+<xs:element name="guestTeamName" type="xs:string" minOccurs="0"/>
+<xs:element name="guestTeamCountry" type="xs:string" minOccurs="0"/>
+<xs:element name="guestTeamCoachName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createGuestSoccerTeamResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getGuestTeamCoachName">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGuestTeamCoachNameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHostPlayerPlayedWholeTime">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+<xs:element name="lastMatch" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHostPlayerPlayedWholeTimeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="arbitersCreateQuery">
+<xs:sequence>
+<xs:element name="query" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="arbitersCreateQueryResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:arbiters" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="arbiters">
+<xs:sequence>
+<xs:element name="arbitratormatchid" type="xs:int" minOccurs="0"/>
+<xs:element name="arbitratorname" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:long" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getArbiterName">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getArbiterNameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGuestPlayerFouls">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+<xs:element name="lastMatch" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGuestPlayerFoulsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGuestPlayerPlayedWholeTime">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+<xs:element name="lastMatch" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGuestPlayerPlayedWholeTimeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hasMatchInData">
+<xs:sequence>
+<xs:element name="deleteMatchId" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hasMatchInDataResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGuestPlayerRedCard">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+<xs:element name="lastMatch" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGuestPlayerRedCardResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getArbitratorAssistantsSize">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getArbitratorAssistantsSizeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHostPlayerEntryTime">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+<xs:element name="lastMatch" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHostPlayerEntryTimeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHostTeamCountryName">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHostTeamCountryNameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGuestTeamPlayersSize">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGuestTeamPlayersSizeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getBasicMatchesInfo">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getBasicMatchesInfoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHostPlayerRedCard">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+<xs:element name="lastMatch" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHostPlayerRedCardResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="showDatabaseArbitersList">
+<xs:sequence>
+<xs:element name="queryName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="showDatabaseArbitersListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:arbiters" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHostPlayerName">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+<xs:element name="lastMatch" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHostPlayerNameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="showDatabaseTeamList">
+<xs:sequence>
+<xs:element name="queryName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="showDatabaseTeamListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:team" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="team">
+<xs:sequence>
+<xs:element name="coachnameteam" type="xs:string" minOccurs="0"/>
+<xs:element name="countrynameteam" type="xs:string" minOccurs="0"/>
+<xs:element name="id" type="xs:long" minOccurs="0"/>
+<xs:element name="nameteam" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMatchId">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMatchIdResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="teamCreateQuery">
+<xs:sequence>
+<xs:element name="query" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="teamCreateQueryResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:team" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHostTeamName">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHostTeamNameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addNewMatchToJPA">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="addNewMatchToJPAResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getHostTeamCoachName">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHostTeamCoachNameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteOneMatchDatabase">
+<xs:sequence>
+<xs:element name="deleteMatchId" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteOneMatchDatabaseResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="createHostSoccerTeam">
+<xs:sequence>
+<xs:element name="hostTeamName" type="xs:string" minOccurs="0"/>
+<xs:element name="hostTeamCountry" type="xs:string" minOccurs="0"/>
+<xs:element name="hostTeamCoachName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="createHostSoccerTeamResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="deleteMatchById">
+<xs:sequence>
+<xs:element name="deleteMatchId" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deleteMatchByIdResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getMatchTime">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMatchTimeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addHostPlayer">
+<xs:sequence>
+<xs:element name="playerHostName" type="xs:string" minOccurs="0"/>
+<xs:element name="playerHostGoals" type="xs:int"/>
+<xs:element name="playerHostEnteredMinute" type="xs:int"/>
+<xs:element name="playerHostLeftMinute" type="xs:int"/>
+<xs:element name="playerHostYellowCards" type="xs:int"/>
+<xs:element name="playerHostFouls" type="xs:int"/>
+<xs:element name="matchLength" type="xs:int"/>
+<xs:element name="playerHostRedCards" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addHostPlayerResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="matchesCreateQuery">
+<xs:sequence>
+<xs:element name="query" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="matchesCreateQueryResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:matches" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="matches">
+<xs:sequence>
+<xs:element name="arbiternamematch" type="xs:string" minOccurs="0"/>
+<xs:element name="guestteamid" type="xs:int" minOccurs="0"/>
+<xs:element name="hostteamid" type="xs:int" minOccurs="0"/>
+<xs:element name="id" type="xs:long" minOccurs="0"/>
+<xs:element name="lengthmatch" type="xs:int" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addGuestPlayer">
+<xs:sequence>
+<xs:element name="playerGuestName" type="xs:string" minOccurs="0"/>
+<xs:element name="playerGuestGoals" type="xs:int"/>
+<xs:element name="playerGuestEnteredMinute" type="xs:int"/>
+<xs:element name="playerGuestLeftMinute" type="xs:int"/>
+<xs:element name="playerGuestYellowCards" type="xs:int"/>
+<xs:element name="playerGuestFouls" type="xs:int"/>
+<xs:element name="matchLength" type="xs:int"/>
+<xs:element name="playerGuestRedCards" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addGuestPlayerResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getHostPlayerLeftTime">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+<xs:element name="lastMatch" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getHostPlayerLeftTimeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="showDatabaseMatchesList">
+<xs:sequence>
+<xs:element name="queryName" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="showDatabaseMatchesListResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:matches" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveDatabaseToFile">
+<xs:sequence>
+<xs:element name="filePath" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="saveDatabaseToFileResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getGuestTeamCountryName">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGuestTeamCountryNameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="playerCreateQuery">
+<xs:sequence>
+<xs:element name="query" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="playerCreateQueryResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:players" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGuestPlayerScoredGoals">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+<xs:element name="lastMatch" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getGuestPlayerScoredGoalsResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getArbitratorAssistantName">
+<xs:sequence>
+<xs:element name="index" type="xs:int"/>
+<xs:element name="i" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getArbitratorAssistantNameResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persist">
+<xs:sequence>
+<xs:element name="arg0" type="xs:anyType" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="persistResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="readMatchFromFileDatabase">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="readMatchFromFileDatabaseResponse">
+<xs:sequence/>
+</xs:complexType>
+</xs:schema>
